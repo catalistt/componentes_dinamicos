@@ -1,0 +1,66 @@
+<h1>Home</h1>
+
+<h4> Alert Dismissing </h4>
+<div class="alert alert-warning" role="alert">
+  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<h4> Collapse </h4>
+
+<p>
+  <button class="segundo btn btn-primary" type="button" data-target="#collapseExample" >
+      Button with data-target
+  </button>
+</p>
+
+<div class="collapse" id="collapseExample">
+ <div class="card card-body">
+  Some content
+  </div>
+</div>
+
+<hr>
+
+<h4> Collapse accordion </h4>
+<div class="accordion" id="accordion_parent">
+  <div class="card">
+    <div class="card-header">
+        <button class=" btn btn-link" type="button" data-toggle="collapse" data-target="#first_collapse" aria-expanded="true" aria-controls="first_collapse">
+          <h5>Item 1</h5>
+        </button>
+    </div>
+
+    <div id="first_collapse" class="collapse" data-parent="#accordion_parent">
+      <div class="card-body">
+        Some content
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#second_collapse" aria-expanded="false" aria-controls="second_collapse">
+          <h5>Item 2</h5>
+        </button>
+    </div>
+    <div id="second_collapse" class="collapse" data-parent="#accordion_parent">
+      <div class="card-body">
+        Some content
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#third_collapse" aria-expanded="false" aria-controls="third_collapse">
+         <h5>Item 3</h5>
+      </button>
+    </div>
+    <div id="third_collapse" class="collapse" data-parent="#accordion_parent">
+      <div class="card-body">
+        Some content
+      </div>
+    </div>
+  </div>
+</div>
